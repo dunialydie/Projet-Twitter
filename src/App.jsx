@@ -13,7 +13,7 @@ function App() {
   return (
     <section className='flex container mx-auto justify-center'>
       <Menu/>
-      <div className='justify-center items-center max-w-2xl border-solid border-2 border-x-zinc-700'>
+      <div className='justify-center items-center max-w-2xl border-x border-slate-800'>
           <Header/>
           <Form/>
           <Tweets/>
