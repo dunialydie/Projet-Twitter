@@ -1,0 +1,40 @@
+import image from '/src/assets/image 1.svg'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faCircleCheck} from '@fortawesome/free-solid-svg-icons';
+import SMS from '/src/assets/Butonsms.svg'
+import replies from '/src/assets/Butonreplies.svg'
+import likes from '/src/assets/Butonlike.svg'
+import download from '/src/assets/Butontelechargement.svg'
+import fav from '/src/assets/pexels-karolina-grabowska-4471325.jpg'
+import Img from './Image';
+import tweets from '/home/user-16-c2/Documents/react/ProjetTwitter/projetwiter/src/J-SON/tweets-x.json'
+
+export default function Tweets(props) {
+    const formatDate= (date)=>{
+        return new Date(date).getUTCDate()
+    }
+    return tweets.map((tweet)=>(
+                    <div className="flex px-5 gap-x-3 border-b-2 border-gray" key= {tweet.id}>
+                        <Img src={tweet.author_avatar} style="h-12 rounded-full"/>
+                        <div className=' '>
+                            <span className='text-white'>{tweet.source}</span>
+                            {(tweet.isVerified == true) && <span className='text-white '><FontAwesomeIcon icon={faCircleCheck} /></span>}
+                            <span className='text-zinc-600'>@{tweet.source}.</span>
+                            <span className='text-zinc-600'>{formatDate(tweet.date)}min</span>
+                            <p className='text-white pb-4 pt-2'>{tweet.text}</p>
+                            {(tweet.image) && <Img src={tweet.image} style="rounded-2xl w-82 "/>}
+                            <div className='grid grid-cols-8 text-white  mt-4  item-center justify-between'>
+                                <Img src={SMS} style="border-l-2 border-red-600 mb-1"/>
+                                <span className='pt-1'>{tweet.replies}</span>
+                                <Img src={replies} style="border-l-2 border-red-600 mb-1" />
+                                <span className='pt-1'>{tweet.retweets}</span>
+                                <Img src={likes} style="border-l-2 border-red-600 mb-1"/>
+                                <span className='pt-1'>{tweet.favorites}</span>
+                                <Img src={download} style="border-l-2 border-red-600 mb-1"/>
+                                <span className='pt-1'>4</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                ))
+            }
