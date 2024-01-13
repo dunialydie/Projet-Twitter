@@ -1,12 +1,14 @@
 import Search from "./search"
 import TrendsList from "./Trendlist"
 import Follow from "./Followers"
+import Footer from "./Footer"
 export default function Trends(){
     return(
-        <div className=" border-2 border-red-600 text-white basis-1/3">
+        <div className="basis-1/3">
             <Search/>
             <TrendsList/>
             <Follow/>
+            <Footer/>
         </div>
     )
 }

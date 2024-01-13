@@ -5,8 +5,8 @@ import Listrend from "./Listrend";
 
 export default function TrendsList(){
 return(
-    <div className="text-white bg-slate-700 gap-x-3 px-5 mt-4 rounded-2xl p-4">
-        <div className="flex justify-between pb-2">
+    <div className="text-white bg-slate-800 gap-x-3 px-5 mt-4 rounded-2xl p-4">
+        <div className="flex justify-between pb-4">
         <h3>Trends for you</h3>
         <Img src={Setting}/>
         </div>
