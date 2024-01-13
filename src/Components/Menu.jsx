@@ -7,15 +7,13 @@ import Message from"/src/assets/Messages.svg";
 import Bookmarks from "/src/assets/Bookmarks.svg";
 import Lists from "/src/assets/Lists.svg";
 import Profile from "/src/assets/Private.svg";
-import More2 from "/src/assets/More-2.svg"
+import More2 from "/src/assets/More-2.svg";
 import More from "/src/assets/More.svg"
 import photoProfile from '/src/assets/Profile-Photo.svg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faLock} from '@fortawesome/free-solid-svg-icons';
-
-
-
 import Img from "./Image";
+
 export default function Menu(props){
     return(
         <div className="flex-rows justify-between  text-white min-w-64 basis-1/4 h-full max-h-max">
