@@ -1,6 +1,6 @@
 export default function Trends(){
     return(
-        <div className="boder-2 border-pink text-white">
+        <div className="border-2 border-red-600 text-white basis-1/3">
             <div>jjoizjojzeifjzoifj</div>
            
 

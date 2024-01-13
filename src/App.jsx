@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Components/Header'
 import Form from './Components/Form'
@@ -13,7 +11,7 @@ function App() {
   return (
     <section className='flex container mx-auto justify-center'>
       <Menu/>
-      <div className='justify-center items-center max-w-2xl border-x border-slate-800'>
+      <div className='justify-center items-center border-x border-slate-800 basis-1/2'>
           <Header/>
           <Form/>
           <Tweets/>

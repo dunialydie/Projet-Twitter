@@ -13,7 +13,7 @@ export default function Form(props) {
             <div className='container grid grid-rows-2 border-solid mx-auto'>
                 <div className=' h-6 justify-center mt-5 w-48'>
                     <form action="" className='h-6'>
-                        <input type="text" placeholder="What's happening?" className='w-48 bg-black '/>
+                        <input type="text" placeholder="What's happening?" className='w-48 bg-black focus:outline-none caret-white text-white'/>
                     </form>
                 </div>
                 <div className='flex container gap-x-72 items-end '>

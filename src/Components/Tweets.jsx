@@ -1,11 +1,9 @@
-import image from '/src/assets/image 1.svg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faCircleCheck} from '@fortawesome/free-solid-svg-icons';
 import SMS from '/src/assets/Butonsms.svg'
 import replies from '/src/assets/Butonreplies.svg'
 import likes from '/src/assets/Butonlike.svg'
 import download from '/src/assets/Butontelechargement.svg'
-import fav from '/src/assets/pexels-karolina-grabowska-4471325.jpg'
 import Img from './Image';
 import tweets from '/home/user-16-c2/Documents/react/ProjetTwitter/projetwiter/src/J-SON/tweets-x.json'
 
@@ -21,7 +19,7 @@ export default function Tweets(props) {
                             {(tweet.isVerified == true) && <span className='text-white '><FontAwesomeIcon icon={faCircleCheck} /></span>}
                             <span className='text-zinc-600'>@{tweet.source}.</span>
                             <span className='text-zinc-600'>{formatDate(tweet.date)}min</span>
-                            <p className='text-white pb-4 pt-2'>{tweet.text}</p>
+                            <p className='text-white pb-4 pt-2 text-base'>{tweet.text}</p>
                             {(tweet.image) && <Img src={tweet.image} style="rounded-2xl w-82 "/>}
                             <div className='grid grid-cols-8 text-white  mt-4  item-center justify-between'>
                                 <Img src={SMS} style="mb-1"/>
