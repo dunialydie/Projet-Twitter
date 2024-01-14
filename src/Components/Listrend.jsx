@@ -22,7 +22,7 @@ const tab = [
 
 export default function Listrend(){
     return tab.map((trend)=>(
-        <div className="flex text-white justify-between pb-4">
+        <div className="flex text-white justify-between pb-4 hover:opacity-75">
             <div>
                 <h2 className="text-zinc-600">{trend.name}</h2>
                 <h2>#{trend.Author}</h2>

@@ -12,7 +12,7 @@ export default function Tweets(props) {
         return new Date(date).getUTCDate()
     }
     return tweets.map((tweet)=>(
-                    <div className="flex px-5 gap-x-3 border-b border-slate-800" key= {tweet.id}>
+                    <div className="flex px-5 gap-x-3 border-b border-slate-800 hover:opacity-75" key= {tweet.id}>
                         <Img src={tweet.author_avatar} style="h-12 rounded-full"/>
                         <div className=' '>
                             <span className='text-white'>{tweet.source}</span>

@@ -16,34 +16,34 @@ import Img from "./Image";
 
 export default function Menu(props){
     return(
-        <div className="flex-rows justify-between  text-white min-w-64 basis-1/4 h-full max-h-max">
-                <Img src={Tweeter} style="pb-5"/>
+        <div className="flex-rows justify-between  text-white  basis-1/4 h-full max-h-max ">
+            <Img src={Tweeter} style="pb-5 hover:opacity-75"/>
             <div className="flex gap-x-6">
                 <div className="font-bold">
-                    <Img src={Home} style="pb-6 leading-7"/>
-                    <Img src={Explore} style="pb-6 leading-7"/>
-                    <Img src={Notification} style="pb-6 leading-7"/>
-                    <Img src={Message} style="pb-6 leading-7"/>
-                    <Img src={Bookmarks} style="pb-6 leading-7"/>
-                    <Img src={Lists} style="pb-6 leading-7"/>
-                    <Img src={Profile} style="pb-6 leading-7"/>
-                    <Img src={More} style="pb-6 leading-7"/>
+                    <Img src={Home} style="pb-6 leading-7 hover:opacity-75"/>
+                    <Img src={Explore} style="pb-6 leading-7 hover:opacity-75"/>
+                    <Img src={Notification} style="pb-6 leading-7 hover:opacity-75"/>
+                    <Img src={Message} style="pb-6 leading-7 hover:opacity-75"/>
+                    <Img src={Bookmarks} style="pb-6 leading-7 hover:opacity-75"/>
+                    <Img src={Lists} style="pb-6 leading-7 hover:opacity-75"/>
+                    <Img src={Profile} style="pb-6 leading-7 hover:opacity-75"/>
+                    <Img src={More} style="pb-6 leading-7 hover:opacity-75"/>
                 </div>
                 <div className="font-bold">
-                    <p className="pb-5 text-lg leading-7">Home</p>
-                    <p className="pb-5 text-lg leading-7">Explore</p>
-                    <p className="pb-5 text-lg leading-7">Notifications</p>
-                    <p className="pb-5 text-lg leading-7">Messages</p>
-                    <p className="pb-5 text-lg leading-7">Bookmarks</p>
-                    <p className="pb-5 text-lg leading-7">Lists</p>
-                    <p className="pb-5 text-lg leading-7">Profile</p>
-                    <p className="pb-5 text-lg leading-7">More</p>
+                    <p className="pb-5 text-lg leading-7 hover:opacity-75">Home</p>
+                    <p className="pb-5 text-lg leading-7 hover:opacity-75">Explore</p>
+                    <p className="pb-5 text-lg leading-7 hover:opacity-75">Notifications</p>
+                    <p className="pb-5 text-lg leading-7 hover:opacity-75">Messages</p>
+                    <p className="pb-5 text-lg leading-7 hover:opacity-75">Bookmarks</p>
+                    <p className="pb-5 text-lg leading-7 hover:opacity-75">Lists</p>
+                    <p className="pb-5 text-lg leading-7 hover:opacity-75">Profile</p>
+                    <p className="pb-5 text-lg leading-7 hover:opacity-75">More</p>
                 </div>
             </div>
             <div className="max-w-48 mt-4">
-                <Buttons name="Tweet" style="text-white px-4 py-2 rounded-full bg-cyan-500 font-semibold item-center container"/>
+                <Buttons name="Tweet" style="text-white px-4 py-2 rounded-full bg-cyan-500 font-semibold item-center container hover:opacity-75"/>
             </div>
-            <div className="flex mt-80 gap-x-4 font-bold text-base">
+            <div className="flex mt-80 gap-x-4 font-bold text-base hover:opacity-75">
                 <div>
                     <Img src= {photoProfile} style="h-12 rounded-full"/>
                 </div>

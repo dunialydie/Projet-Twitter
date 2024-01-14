@@ -1,5 +1,3 @@
-
-
 export default function Footer(){
     return(
         <div className="text-zinc-600 px-6 py-4">

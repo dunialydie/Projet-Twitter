@@ -24,7 +24,7 @@ const tab = [
 
 export default function Listfollowers(){
     return tab.map((follows)=>(
-        <div className="flex text-white justify-between pb-4">
+        <div className="flex text-white justify-between pb-4 hover:opacity-75">
             <div className="flex gap-x-4">
                 <div>
                     <Img src={follows.image}/>
