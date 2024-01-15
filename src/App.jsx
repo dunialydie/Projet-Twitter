@@ -11,7 +11,7 @@ function App() {
   return (
     <section className='flex container mx-auto justify-center'>
       <Menu/>
-      <div className='justify-center items-center border-x border-slate-800 basis-1/2'>
+      <div className='justify-center items-center border-x border-slate-800 basis-1/2 snap-y snap-sandatory overflow-y-scroll no-scrollbar h-screen'>
           <Header/>
           <Form/>
           <Tweets/>

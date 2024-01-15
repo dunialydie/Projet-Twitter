@@ -8,7 +8,7 @@ import Buttons from './Buttons';
 import Img from './Image';
 export default function Form(props) {
     return(
-        <div className='flex h-32 gap-x-1.5 justify-start border-b border-slate-800'>
+        <div className='flex h-32 gap-x-1.5 justify-start border-b border-slate-800     '>
             <Img src={photoProfile} style="px-8 h-12 rounded-full"/>
             <div className='container flex flex-col mr-4 gap-y-6'>
                 <div className=' h-6 justify-center mt-5 w-48'>

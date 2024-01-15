@@ -8,23 +8,26 @@ const tab = [
     {title:"The New York Times",
     isVerified: true,
     tag:"@Newyork time",
-    image: "/src/assets/image 1.svg"
+    image: "/src/assets/image 1.svg",
+    id: "151",
     },
     {title:"CNN",
     isVerified: false,
     tag:"@CNN",
-    image: "/src/assets/image 1.svg"
+    image: "/src/assets/image 1.svg",
+    id: "161",
     },
     {title:"Twitter",
     isVerified: true,
     tag:"@Twitter",
-    image: "/src/assets/image 1.svg"
+    image: "/src/assets/image 1.svg",
+    id: "171",
     }
 ]
 
 export default function Listfollowers(){
     return tab.map((follows)=>(
-        <div className="flex text-white justify-between pb-4 hover:opacity-75">
+        <div className="flex text-white justify-between pb-4 hover:opacity-75" key= {follows.id}>
             <div className="flex gap-x-4">
                 <div>
                     <Img src={follows.image}/>
