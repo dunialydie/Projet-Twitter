@@ -34,7 +34,7 @@ export default function Tweets(props) {
                                 <span className='pt-1'>{tweet.replies}</span>
                                 <Img src={replies} style="mb-1" />
                                 <span className='pt-1'>{tweet.retweets}</span>
-                                <Img src={likes} style="mb-1 border border-blue" onClick={handleLike}/>
+                                <Img src={likes} style="mb-1 " onClick={handleLike}/>
                                 <span className='pt-1'> {countLike}</span>
                                 <Img src={download} style="mb-1"/>
                                 <span className='pt-1'>4</span>
