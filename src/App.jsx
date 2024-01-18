@@ -6,7 +6,7 @@ import Tweets from './Components/Tweets'
 import Menu from './Components/Menu'
 import Trends from './Components/Trends'
 
-function App() {
+function App() { 
 
   return (
     <section className='flex container mx-auto justify-center'>
