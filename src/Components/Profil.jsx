@@ -25,10 +25,10 @@ export default function Profil(){
                         <span className="text-zinc-600 pt-3 ml-4">Joined January 2024</span>
                         <div className="flex gap-3 mt-3">
                             <Conteur count={1}>
-                                <Word word="Following"/>
+                                <Word word="Following" style="text-zinc-600"/>
                             </Conteur>
                             <Conteur count={0}>
-                                <Word word="Followers"/>
+                                <Word word="Followers" style="text-zinc-600"/>
                             </Conteur>
                         </div>
                     </div>
@@ -38,12 +38,15 @@ export default function Profil(){
                 </div>
 
             </div>
-            <div className="grid grid-cols-5 px-6  border-b border-slate-800 pb-4">
+            <div className="grid grid-cols-5 px-6  border-b border-slate-800 pb-4 hover:opacity-75 ">
                 <LinkProfil title="Posts" style="text-white "/>
                 <LinkProfil title="Replies" style="text-zinc-600 "/>
                 <LinkProfil title="Highlights" style="text-zinc-600" />
                 <LinkProfil title="Media" style="text-zinc-600 "/>
                 <LinkProfil title="Likes" style="text-zinc-600 3"/>
+            </div>
+            <div>
+                <Word word="Let's get you set up" style=" text-white font-bold text-xl"/>
             </div>
            
 
