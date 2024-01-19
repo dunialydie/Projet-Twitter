@@ -5,9 +5,10 @@ import ProfilHeader from "./ProfilHeader";
 import LinkProfil from "./LinkProfil";
 import Buttons from "./Buttons";
 import {Word,Conteur} from "./conteur";
+import Listfollowers from "./Listfollowers";
 export default function Profil(){
         return(
-        <div>
+        <div className="snap-sandatory overflow-y-scroll no-scrollbar h-screen">
             <div className="flex container gap-6 px-6 h-16 content-center items-center">
                 <FontAwesomeIcon icon={faArrowLeft} size="lg" style={{color: "#ffffff",}} />
                 <ProfilHeader  title="Lydie Dunia" num="0 Posts"/>
@@ -48,8 +49,12 @@ export default function Profil(){
             <div>
                 <Word word="Let's get you set up" style=" text-white font-bold text-xl"/>
             </div>
-           
-
+            <div>
+            <div className="flex justify-between pb-4 font-bold text-xl text-white">
+            <h3>Who to follow</h3>
+            </div>
+            <Listfollowers/>
+            </div>
         </div>
     )
 }
