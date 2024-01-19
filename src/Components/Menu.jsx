@@ -13,7 +13,7 @@ import photoProfile from '/src/assets/Profile-Photo.svg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faLock} from '@fortawesome/free-solid-svg-icons';
 import Img from "./Image";
-import Profil from "./Profil";
+import ProfilHeader from "./ProfilHeader";
 import MenuLink from "./MenuLink";
 
 
@@ -40,9 +40,7 @@ export default function Menu(props){
                     <Img src= {photoProfile} style="h-12 rounded-full"/>
                 </div>
                 <div>
-                    <span>Lydie Dunia</span>
-                    <span><FontAwesomeIcon icon={faLock} /></span>
-                    <p className='text-zinc-600'>@Lydie</p>
+                <ProfilHeader  title="Lydie Dunia" num="@Lydie"/>
                 </div>
                 <Img src={More2} style="ml-24"/>
             </div>
