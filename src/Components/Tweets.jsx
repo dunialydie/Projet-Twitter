@@ -14,7 +14,6 @@ import ActionItem from './ActionItem';
 export default function Tweets(props) {
 
     const [tweets, setTweets] = useState(TWEETS)
-    // console.log(countLike);
     const formatDate= (date)=>{
         return new Date(date).getUTCDate()
     }
@@ -28,7 +27,7 @@ export default function Tweets(props) {
         setTweets(updatedTweet);
       };
     return tweets.map((tweet)=>(
-                    <div className="flex px-5 gap-x-3 border-b border-slate-800 hover:opacity-60" key= {tweet.id}>
+                    <div className="flex px-5 gap-x-3 border-b border-slate-800 hover:opacity-60 mt-3" key= {tweet.id}>
                         <Img src={tweet.author_avatar} style="h-12 rounded-full"/>
                         <div className=' '>
                             <span className='text-white'>{tweet.source}</span>
@@ -41,7 +40,7 @@ export default function Tweets(props) {
                                 <ActionItem icon={SMS} count={tweet.replies} />
                                 <ActionItem icon={replies} count={tweet.retweets} />
                                 <ActionItem icon={likes} count={tweet.favorites} id={tweet.id} handleLike={handleLike} />
-                                <ActionItem icon={download}  />
+                                <ActionItem icon={download}/>
                             </div>
                         </div>
                     </div>

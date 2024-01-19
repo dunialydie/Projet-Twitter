@@ -13,33 +13,25 @@ import photoProfile from '/src/assets/Profile-Photo.svg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faLock} from '@fortawesome/free-solid-svg-icons';
 import Img from "./Image";
+import Profil from "./Profil";
+import MenuLink from "./MenuLink";
+
+
+// import Rout from "./Routers";
 
 export default function Menu(props){
     return(
-        <div className="flex-rows justify-between  text-white  basis-1/4 h-full max-h-max ">
-            <Img src={Tweeter} style="pb-5 hover:opacity-75"/>
-            <div className="flex gap-x-6">
-                <div className="font-bold">
-                    <Img src={Home} style="pb-6 leading-7 hover:opacity-75"/>
-                    <Img src={Explore} style="pb-6 leading-7 hover:opacity-75"/>
-                    <Img src={Notification} style="pb-6 leading-7 hover:opacity-75"/>
-                    <Img src={Message} style="pb-6 leading-7 hover:opacity-75"/>
-                    <Img src={Bookmarks} style="pb-6 leading-7 hover:opacity-75"/>
-                    <Img src={Lists} style="pb-6 leading-7 hover:opacity-75"/>
-                    <Img src={Profile} style="pb-6 leading-7 hover:opacity-75"/>
-                    <Img src={More} style="pb-6 leading-7 hover:opacity-75"/>
-                </div>
-                <div className="font-bold">
-                    <p className="pb-5 text-lg leading-7 hover:opacity-75">Home</p>
-                    <p className="pb-5 text-lg leading-7 hover:opacity-75">Explore</p>
-                    <p className="pb-5 text-lg leading-7 hover:opacity-75">Notifications</p>
-                    <p className="pb-5 text-lg leading-7 hover:opacity-75">Messages</p>
-                    <p className="pb-5 text-lg leading-7 hover:opacity-75">Bookmarks</p>
-                    <p className="pb-5 text-lg leading-7 hover:opacity-75">Lists</p>
-                    <p className="pb-5 text-lg leading-7 hover:opacity-75">Profile</p>
-                    <p className="pb-5 text-lg leading-7 hover:opacity-75">More</p>
-                </div>
-            </div>
+        <nav className="flex-rows justify-between  text-white  basis-1/4 h-full max-h-max ">
+            <MenuLink src= {Tweeter} to = "/"/>
+            <MenuLink src= {Home} to = "/" title = "Home"/>
+            <MenuLink src= {Explore} to = "/" title = "Explore"/>
+            <MenuLink src= {Notification} to = "/" title = "Notifications"/>
+            <MenuLink src= {Message} to = "/" title = "Message" />
+            <MenuLink src= {Bookmarks} to = "/" title = "Bookmarks"/>
+            <MenuLink src= {Lists} to = "/" title = "Lists"/>
+            <MenuLink src= {Profile} to = "/profil" title = "Profile"/>
+            <MenuLink src= {More} to = "/" title = "More"/>
+
             <div className="max-w-48 mt-4">
                 <Buttons name="Tweet" style="text-white px-4 py-2 rounded-full bg-cyan-500 font-semibold item-center container hover:opacity-75"/>
             </div>
@@ -54,6 +46,8 @@ export default function Menu(props){
                 </div>
                 <Img src={More2} style="ml-24"/>
             </div>
-        </div>
+        </nav>
+        
+        
     )
 }
