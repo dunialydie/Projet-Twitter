@@ -41,11 +41,11 @@ export default function Profil(){
 
             </div>
             <div className="grid grid-cols-5 px-6  border-b border-slate-800 pb-4 hover:opacity-75 ">
-                <LinkProfil title="Posts" style="text-white "/>
-                <LinkProfil title="Replies" style="text-zinc-600 "/>
-                <LinkProfil title="Highlights" style="text-zinc-600" />
-                <LinkProfil title="Media" style="text-zinc-600 "/>
-                <LinkProfil title="Likes" style="text-zinc-600 3"/>
+                <LinkProfil title="Posts" style="text-white hover:underline decoration-4"/>
+                <LinkProfil title="Replies" style="text-zinc-600 hover:underline decoration-4"/>
+                <LinkProfil title="Highlights" style="text-zinc-600 hover:underline decoration-4" />
+                <LinkProfil title="Media" style="text-zinc-600 hover:underline decoration-4"/>
+                <LinkProfil title="Likes" style="text-zinc-600 hover:underline decoration-4"/>
             </div>
             <div className="px-6 border-b border-slate-800 mt-4">
                 <Word word="Let's get you set up" style=" text-white font-bold text-xl "/>
