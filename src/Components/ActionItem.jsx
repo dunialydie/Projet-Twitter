@@ -20,7 +20,7 @@ export default function ActionItem({icon, count, id, handleLike }) {
     return(
         <div className='flex items-center' onClick={handleClick}>
             {
-                (action) ? <FontAwesomeIcon icon={faHeart} className={color}/> : <Img src={icon} style="mb-1"/>
+                (action) ? <FontAwesomeIcon icon={faHeart} className={color}/> : <Img src={icon} />
             }
             <span className={`pt-1 ${color}`} >{count}</span>
         </div>

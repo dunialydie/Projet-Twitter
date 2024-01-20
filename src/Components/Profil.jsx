@@ -6,10 +6,11 @@ import LinkProfil from "./LinkProfil";
 import Buttons from "./Buttons";
 import {Word,Conteur} from "./conteur";
 import Listfollowers from "./Listfollowers";
+import Carrousel from "./Carrousel ";
 export default function Profil(){
         return(
         <div className="snap-sandatory overflow-y-scroll no-scrollbar h-screen">
-            <div className="flex container gap-6 px-6 h-16 content-center items-center">
+            <div className="flex container gap-6 px-6 h-16 content-center items-center ">
                 <FontAwesomeIcon icon={faArrowLeft} size="lg" style={{color: "#ffffff",}} />
                 <ProfilHeader  title="Lydie Dunia" num="0 Posts"/>
             </div>
@@ -46,10 +47,11 @@ export default function Profil(){
                 <LinkProfil title="Media" style="text-zinc-600 "/>
                 <LinkProfil title="Likes" style="text-zinc-600 3"/>
             </div>
-            <div>
-                <Word word="Let's get you set up" style=" text-white font-bold text-xl"/>
+            <div className="px-6 border-b border-slate-800 mt-4">
+                <Word word="Let's get you set up" style=" text-white font-bold text-xl "/>
+                <Carrousel/>
             </div>
-            <div>
+            <div className="px-6 py-4">
             <div className="flex justify-between pb-4 font-bold text-xl text-white">
             <h3>Who to follow</h3>
             </div>
