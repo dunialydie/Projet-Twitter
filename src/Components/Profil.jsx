@@ -1,4 +1,3 @@
-import Img from "./Image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faArrowLeft,faCalendarDays} from '@fortawesome/free-solid-svg-icons';
 import ProfilHeader from "./ProfilHeader";
@@ -15,7 +14,7 @@ export default function Profil(){
                 <ProfilHeader  title="Lydie Dunia" num="0 Posts"/>
             </div>
             <div className="bg-slate-800 h-48">
-                <div class="pb-10 w-36 h-36 bg-sky-500 rounded-full border-4 border-black justify-center items-center text-center p-5 shadow-x relative left-6 top-28 ">
+                <div className="pb-10 w-36 h-36 bg-sky-500 rounded-full border-4 border-black justify-center items-center text-center p-5 shadow-x relative left-6 top-28 ">
                     <h1 className="text-8xl text-white">L</h1>
                 </div>
             </div>
@@ -38,7 +37,6 @@ export default function Profil(){
                     <Buttons name="Edit Profile" style="text-white px-4 py-2 rounded-full font-bold min-w-32 p-0 border mt-4 hover:opacity-75"/>
                     </div>
                 </div>
-
             </div>
             <div className="grid grid-cols-5 px-6  border-b border-slate-800 pb-4 hover:opacity-75 ">
                 <LinkProfil title="Posts" style="text-white hover:underline decoration-4"/>

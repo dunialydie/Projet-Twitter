@@ -1,4 +1,4 @@
-import photoProfile from '/src/assets/Profile-Photo.svg';
+// import photoProfile from '/src/assets/Profile-Photo.svg';
 import form1 from '/src/assets/TopTweets-form.svg';
 import form2 from '/src/assets/TopTweets2-fom.svg';
 import form3 from '/src/assets/TopTweets3-form.svg';
@@ -6,11 +6,13 @@ import form4 from '/src/assets/TopTweets4-form.svg';
 import form5 from '/src/assets/TopTweets5-form.svg';
 import Buttons from './Buttons';
 import Img from './Image';
-export default function Form(props) {
+
+export default function Form({user}) {
+
     return(
-        <div className='flex h-32 gap-x-1.5 justify-start border-b border-slate-800     '>
-            <Img src={photoProfile} style="px-8 h-12 rounded-full"/>
-            <div className='container flex flex-col mr-4 gap-y-6'>
+        <div className='flex h-32 gap-x-2.5 justify-start border-b border-slate-800 p-4'>
+            <Img src={user.thumbnailProfil} style="h-12 rounded-full"/>
+            <div className='container flex flex-col mr-4 gap-y-4 '>
                 <div className=' h-6 justify-center mt-5 w-48'>
                     <form action="" className='h-6'>
                         <input type="text" placeholder="What's happening?" className='w-48 bg-black focus:outline-none caret-white text-white '/>

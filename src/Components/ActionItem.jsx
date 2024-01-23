@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHeart} from '@fortawesome/free-solid-svg-icons';
 import Img from './Image';
@@ -16,7 +16,6 @@ export default function ActionItem({icon, count, id, handleLike }) {
             handleLike(id, 'LIKE');
         }
     }
-
     return(
         <div className='flex items-center' onClick={handleClick}>
             {

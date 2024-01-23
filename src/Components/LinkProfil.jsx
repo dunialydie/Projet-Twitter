@@ -1,4 +1,3 @@
-
 export default function LinkProfil(props){
     return(
         <div>

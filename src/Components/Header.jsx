@@ -2,7 +2,7 @@ import Buttons from "./Buttons";
 import topTweets from '/src/assets/Top-Tweets.svg';
 import Img from "./Image";
 
-export default function Header(props) {
+export default function Header() {
 
     return(
         <div className="">
