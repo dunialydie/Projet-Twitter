@@ -11,14 +11,27 @@ import axios from 'axios';
 
 function App() { 
   const [user,setUser]=useState([])
+  const [posts,setPosts]=useState([])
+
 
   useEffect(()=>{
       axios.get('https://my-json-server.typicode.com/amare53/twiterdb/users/2')
       .then((response)=>{
+          // console.log(response);
           setUser(response.data)
       })
   },[])
 
+  useEffect(()=>{
+    axios.get('https://my-json-server.typicode.com/amare53/twiterdb/users/2/posts')
+    .then((response)=>{
+        console.log(response.data);
+        // console.log("posts:" + posts);
+
+        setPosts(response.data)
+    })
+},[])
+  
   return (
     <BrowserRouter>
       <section className='flex container mx-auto justify-center'>
@@ -31,7 +44,7 @@ function App() {
                   <Form user={user}/>
                   <Tweets/>
                 </>} />
-              <Route path="profil" element={<Profil />} />
+              <Route path="profil" element={<Profil user={user} posts= {posts}/>} />
             </Routes>
           </div>
           <Trends/>

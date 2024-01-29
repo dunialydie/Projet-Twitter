@@ -12,6 +12,13 @@ import More from "/src/assets/More.svg"
 import Img from "./Image";
 import ProfilHeader from "./ProfilHeader";
 import MenuLink from "./MenuLink";
+import { Link } from "react-router-dom";
+
+
+
+const handleClick= ()=>{
+
+}
 
 export default function Menu({user}){
     return(
@@ -30,7 +37,9 @@ export default function Menu({user}){
             </div>
             <div className="flex mt-80 gap-x-4 font-bold text-base hover:opacity-75">
                 <div>
-                    <Img src= {user.thumbnailProfil} style="h-12 rounded-full"/>
+                  <Link to="/profil">
+                    <Img src= {user.thumbnailProfil} style="h-12 rounded-full" oncliCk= {handleClick}/>
+                  </Link>  
                 </div>
                 <div>
                 <ProfilHeader  title={user.name} num= {user.username}/>
